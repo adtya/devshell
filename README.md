@@ -2,20 +2,61 @@
 
 This repo contains a bunch of handy dev shells that can used on any system that has the nix package manager installed.
 
+## Requirements
+ - [Nix](https://github.com/nixos/nix)
+ - [Direnv](https://direnv.net) (Optional)
+ - [nix-direnv](https://github.com/nix-community/nix-direnv) (optional)
+
 ## Available shells
 
 ### Go
- - makes `go` and `gopls` available
- - can be activated with `nix develop github:adtya/devshell#go`
- - can also be activated with direnv by adding `use flake github:adtya/devshell#go` to `.envrc`
+
+#### What's included?
+ - `go`
+ - [`gopls`](https://github.com/golang/tools/tree/master/gopls)
+
+#### Activate with Nix
+```sh
+$ nix develop github:adtya/devshell#go
+```
+
+#### Activate with Direnv
+```sh
+use flake github:adtya/devshell#go
+```
 
 ### Python
- - makes `python3`, `pipenv`, `pyright` and `black` available in path
- - can be activated with `nix develop github:adtya/devshell#python`
- - can also be activated with direnv by adding `use flake github:adtya/devshell#python` to `.envrc`
- - additionally, adding `layout pipenv` to `.envrc` will also activate the pipenv shell based on Pipfile and Pipfile.lock
+
+#### What's included?
+ - `python3`
+ - [`pipenv`](https://github.com/pypa/pipenv)
+ - [`pyright`](https://github.com/microsoft/pyright)
+ - [`black`](https://github.com/microsoft/pyright)
+
+#### Activate with Nix
+```sh
+$ nix develop github:adtya/devshell#python
+```
+
+#### Activate with Direnv
+```sh
+use flake github:adtya/devshell#python
+layout pipenv # adding this will also activate pipenv shell
+ ```
 
 ### Haskell
- - makes `ghc`, `haskell-language-server`, `cabal` and `stack` available in path
- - can be activated with `nix develop github:adtya/devshell#haskell`
- - can also be activated with direnv by adding `use flake github:adtya/devshell#haskell` to `.envrc`
+
+#### What's included?
+ - [`ghc`](https://www.haskell.org/ghc/)
+ - [`haskell-language-server`](https://github.com/haskell/haskell-language-server)
+ - [`cabal`](https://www.haskell.org/cabal/)
+ - [`stack`](https://docs.haskellstack.org/en/stable/)
+
+#### Activate with Nix
+```sh
+$ nix develop github:adtya/devshell#haskell
+```
+#### Activate with Direnv
+```sh
+use flake github:adtya/devshell#haskell
+```
