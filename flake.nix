@@ -13,6 +13,9 @@
       };
     in
     {
+      devShells = {
+        go = import ./go.nix { inherit pkgs; };
+      };
     }
   );
 }
