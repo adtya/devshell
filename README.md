@@ -65,8 +65,9 @@ use flake github:adtya/devshell#haskell
 
 #### What's included?
  - rustc
- - rustfmt
- - rust-analyzer
+ - [rustfmt](https://github.com/rust-lang/rustfmt)
+ - [rust-analyzer](https://rust-analyzer.github.io/)
+ - [cargo](https://github.com/rust-lang/cargo)
 
 #### Activate with Nix
 ```sh
