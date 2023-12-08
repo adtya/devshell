@@ -6,11 +6,11 @@ This repo contains a bunch of handy dev shells that can used on any system that 
 
 ### Go
  - makes `go` and `gopls` available
- - can be activated with `nix develop github:adtya/devshells#go`
- - can also be activated with direnv by adding `use flake github:adtya/devshells#go` to `.envrc`
+ - can be activated with `nix develop github:adtya/devshell#go`
+ - can also be activated with direnv by adding `use flake github:adtya/devshell#go` to `.envrc`
 
 ### Python
  - makes `python3`, `pipenv`, `pyright` and `black` available in path
- - can be activated with `nix develop github:adtya/devshells#python`
- - can also be activated with direnv by adding `use flake github:adtya/devshells#python` to `.envrc`
+ - can be activated with `nix develop github:adtya/devshell#python`
+ - can also be activated with direnv by adding `use flake github:adtya/devshell#python` to `.envrc`
  - additionally, adding `layout pipenv` to `.envrc` will also activate the pipenv shell based on Pipfile and Pipfile.lock
