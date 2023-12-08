@@ -17,6 +17,7 @@
         go = import ./shells/go.nix { inherit pkgs; };
         haskell = import ./shells/haskell.nix { inherit pkgs; };
         python = import ./shells/python.nix { inherit pkgs; };
+        rust = import ./shells/rust.nix { inherit pkgs; };
       };
     }
   );

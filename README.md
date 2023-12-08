@@ -60,3 +60,19 @@ $ nix develop github:adtya/devshell#haskell
 ```sh
 use flake github:adtya/devshell#haskell
 ```
+
+### Rust
+
+#### What's included?
+ - rustc
+ - rustfmt
+ - rust-analyzer
+
+#### Activate with Nix
+```sh
+$ nix develop github:adtya/devshell#rust
+```
+#### Activate with Direnv
+```sh
+use flake github:adtya/devshell#rust
+```
