@@ -16,6 +16,7 @@
       devShells = {
         go = import ./go.nix { inherit pkgs; };
         python = import ./python.nix { inherit pkgs; };
+        haskell = import ./haskell.nix { inherit pkgs; };
       };
     }
   );

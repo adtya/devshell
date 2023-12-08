@@ -14,3 +14,8 @@ This repo contains a bunch of handy dev shells that can used on any system that 
  - can be activated with `nix develop github:adtya/devshell#python`
  - can also be activated with direnv by adding `use flake github:adtya/devshell#python` to `.envrc`
  - additionally, adding `layout pipenv` to `.envrc` will also activate the pipenv shell based on Pipfile and Pipfile.lock
+
+### Haskell
+ - makes `ghc`, `haskell-language-server`, `cabal` and `stack` available in path
+ - can be activated with `nix develop github:adtya/devshell#haskell`
+ - can also be activated with direnv by adding `use flake github:adtya/devshell#haskell` to `.envrc`
