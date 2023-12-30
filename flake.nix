@@ -26,6 +26,7 @@
         haskell = import ./shells/haskell.nix { inherit pkgs; };
         python = import ./shells/python.nix { inherit pkgs; };
         rust = import ./shells/rust.nix { inherit pkgs; };
+        node = import ./shells/node.nix { inherit pkgs; };
       };
     }
   );
