@@ -4,8 +4,7 @@ This repo contains a bunch of handy dev shells that can used on any system that 
 
 ## Requirements
  - [Nix](https://github.com/nixos/nix)
- - [Direnv](https://direnv.net) (Optional)
- - [nix-direnv](https://github.com/nix-community/nix-direnv) (optional)
+ - [Direnv](https://direnv.net) + [nix-direnv](https://github.com/nix-community/nix-direnv) (optional)
 
 ## Available shells
 
@@ -77,3 +76,19 @@ $ nix develop github:adtya/devshell#rust
 ```sh
 use flake github:adtya/devshell#rust
 ```
+
+### Node
+
+#### What's included?
+ - [nodejs](https://nodejs.org)
+ - [yarn](https://yarnpkg.com)
+#### Activatge with Nix
+```sh
+$ nix develop github:adtya/devshell#node
+```
+
+#### Activate with Direnv
+```sh
+use flake github:adtya/devshell#node
+```
+
