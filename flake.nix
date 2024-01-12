@@ -24,9 +24,10 @@
       devShells = {
         go = import ./shells/go.nix { inherit pkgs; };
         haskell = import ./shells/haskell.nix { inherit pkgs; };
+        java = import ./shells/java.nix { inherit pkgs; };
+        node = import ./shells/node.nix { inherit pkgs; };
         python = import ./shells/python.nix { inherit pkgs; };
         rust = import ./shells/rust.nix { inherit pkgs; };
-        node = import ./shells/node.nix { inherit pkgs; };
       };
     }
   );

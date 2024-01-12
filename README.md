@@ -82,7 +82,8 @@ use flake github:adtya/devshell#rust
 #### What's included?
  - [nodejs](https://nodejs.org)
  - [yarn](https://yarnpkg.com)
-#### Activatge with Nix
+
+#### Activate with Nix
 ```sh
 $ nix develop github:adtya/devshell#node
 ```
@@ -91,4 +92,18 @@ $ nix develop github:adtya/devshell#node
 ```sh
 use flake github:adtya/devshell#node
 ```
+### Java
 
+#### What's included?
+ - OpenJDK 20
+ - gradle 8
+
+#### Activate with Nix
+```sh
+$ nix develop github:adtya/devshell#java
+```
+
+#### Activate with Direnv
+```sh
+use flake github:adtya/devshell#java
+```
