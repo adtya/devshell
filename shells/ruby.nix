@@ -6,6 +6,6 @@
   shellHook = ''
     export BUNDLE_HOME="$PWD/.nix/bundle"
     export GEM_HOME="$PWD/.nix/gem"
-    export PATH="GEM_HOME/bin:$PATH"
+    export PATH="$GEM_HOME/bin:$PATH"
   '';
 }
