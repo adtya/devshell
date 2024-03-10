@@ -27,6 +27,7 @@
         java = import ./shells/java.nix { inherit pkgs; };
         node = import ./shells/node.nix { inherit pkgs; };
         python = import ./shells/python.nix { inherit pkgs; };
+        ruby = import ./shells/ruby.nix { inherit pkgs; };
         rust = import ./shells/rust.nix { inherit pkgs; };
       };
     }
