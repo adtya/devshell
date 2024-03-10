@@ -5,6 +5,7 @@
     rubyPackages_3_2.rspec-core
   ];
   shellHook = ''
-    export BUNDLE_USER_HOME="$PWD/.nix/bundle"
+    export BUNDLE_HOME="$PWD/.nix/bundle"
+    export GEM_HOME="$PWD/.nix/gem"
   '';
 }
